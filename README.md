@@ -1,11 +1,6 @@
 # github-ready-tar.gz-
 Refined, debugged and hardened . Integrations, implementations .
 # Updated Base44 Enhancement Prompt (with Wallet + Jupiter)
-
-Copy and paste this into your Base44 AI chat:
-
----
-
 Upgrade my existing minimal "Church of Pump" Base44 app into a professional degen dashboard for the $PUMP token.
 
 **Official Token Mint (CA):** `AgTSWsyrSymK1h35LPhncvtyb9sgViJrwdxAvXjWpump`
@@ -79,5 +74,8 @@ curl http://localhost:3000/metrics
   "last_check": "2026-06-09T...",
   "current_tax": "12458392",
   "uptime_seconds": 18432
-}
-/metrics target to Prometheus
+}1.  docker compose -f docker-compose.monitor.yml up -d --build
+2.  Add the /metrics target to Prometheus
+3.  Set your Discord webhook in .env
+
+
